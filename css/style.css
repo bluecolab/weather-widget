@@ -1,0 +1,63 @@
+body {
+    font-family: Source Sans Pro;
+}
+
+#data-container {
+    font-family: Open Sans, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    margin: auto;
+}
+
+.background__overlay {
+    margin-top: 35%;
+    width: 97%
+}
+
+.background__image {
+    width: 100vw;
+    height: 100vh;
+    max-width: px;
+    background-image: url("../static/mobile_weather_station.png");
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    overflow: hidden;
+}
+
+.data {
+    width: 70%;
+    line-height: 1.5em;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.midblue {
+    color: midnightblue;
+}
+
+.blue {
+    color: blue;
+}
+
+@media only screen and (min-width: 768px) {
+    .background__image {
+        width: 1050px;
+        max-width: 1050px;
+        height: 630px;
+        background-image: url("../static/Weather_Station.png");
+        background-repeat: no-repeat;
+        background-size: 1050px 630px;
+        overflow: hidden;
+    }
+
+    .background__overlay {
+        margin-top: 5%;
+        width: 97%
+    }
+
+    #data-container {
+        font-weight: bold;
+        font-size: 3em;
+    }
+} 
