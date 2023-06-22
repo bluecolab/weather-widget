@@ -77,7 +77,7 @@ function parseWeatherData(json) {
 
 // https://colabprod01.pace.edu/api/influx/sensordata/Odin
 
-fetch('./static/Odin.json')
+fetch('https://vulcan.seidenberg.pace.edu/~escolab/weather-widget/apiCall.php')
     .then((response) => response.json())
     .then((json) => {
         parseWeatherData(json);
